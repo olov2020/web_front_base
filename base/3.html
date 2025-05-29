@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Безопасная веб-страница</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <input type="hidden" name="csrf_token" value="токен">
+        <input type="text" name="username" placeholder="Имя пользователя">
+        <input type="password" name="password" placeholder="Пароль">
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+</html>
