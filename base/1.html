@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UX, доступность и адаптивный дизайн</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        @media (min-width: 768px) {
+            body {
+                grid-template-columns: 1fr 3fr 1fr;
+            }
+        }
+        header, footer {
+            grid-column: 1 / -1;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        aside {
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>UX, доступность и адаптивный дизайн</h1>
+        <nav>
+            <ul>
+                <li><a href="#section1">Раздел 1</a></li>
+                <li><a href="#section2">Раздел 2</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <h2>Боковая плашка</h2>
+        <p>Информация в боковой плашке.</p>
+    </aside>
+    <main>
+        <section id="section1">
+            <h2>Раздел 1</h2>
+            <p>Текст раздела 1.</p>
+            <img src="image1.jpg" alt="Описание изображения 1">
+        </section>
+        <section id="section2">
+            <h2>Раздел 2</h2>
+            <p>Текст раздела 2.</p>
+            <img src="image2.jpg" alt="Описание изображения 2">
+        </section>
+    </main>
+    <aside>
+        <h2>Боковая плашка</h2>
+        <p>Информация в боковой плашке.</p>
+    </aside>
+    <footer>
+        <p>Подвал страницы</p>
+    </footer>
+</body>
+</html>
