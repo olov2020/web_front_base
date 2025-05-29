@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Переменные, типы данных, операторы и условные операторы</title>
+</head>
+<body>
+    <script>
+        let name = "Иван";
+        let age = 25;
+        const PI = 3.14;
+
+        let a = 10;
+        let b = 5;
+        let sum = a + b;
+        let difference = a - b;
+        let product = a * b;
+        let quotient = a / b;
+        let remainder = a % b;
+
+        let isEqual = a == b;
+        let isStrictEqual = a === b;
+        let isNotEqual = a != b;
+        let isStrictNotEqual = a !== b;
+        let isGreater = a > b;
+        let isLess = a < b;
+        let isGreaterOrEqual = a >= b;
+        let isLessOrEqual = a <= b;
+
+        let aBool = true;
+        let bBool = false;
+        let and = aBool && bBool;
+        let or = aBool || bBool;
+        let not = !aBool;
+
+        if (age < 18) {
+            console.log("Вы несовершеннолетний");
+        } else if (age >= 18 && age < 65) {
+            console.log("Вы совершеннолетний");
+        } else {
+            console.log("Вы пенсионер");
+        }
+    </script>
+</body>
+</html>
