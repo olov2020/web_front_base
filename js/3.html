@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Циклы и функции</title>
+</head>
+<body>
+    <script>
+        for (let i = 0; i < 5; i++) {
+            console.log(i);
+        }
+
+        let j = 0;
+        while (j < 5) {
+            console.log(j);
+            j++;
+        }
+
+        let k = 0;
+        do {
+            console.log(k);
+            k++;
+        } while (k < 5);
+
+        function greet() {
+            console.log("Привет, мир!");
+        }
+        greet();
+
+        function greetName(name) {
+            console.log("Привет, " + name + "!");
+        }
+        greetName("Иван");
+
+        function add(a, b) {
+            return a + b;
+        }
+        let sum = add(2, 3);
+        console.log(sum);
+    </script>
+</body>
+</html>
