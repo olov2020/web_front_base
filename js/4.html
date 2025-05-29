@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Введение в DOM</title>
+</head>
+<body>
+    <div id="container">
+        <p class="text">Это абзац текста.</p>
+        <p class="text">Это еще один абзац текста.</p>
+    </div>
+    <script>
+        let container = document.getElementById("container");
+        let texts = document.getElementsByClassName("text");
+        let paragraphs = document.getElementsByTagName("p");
+        let firstText = document.querySelector(".text");
+        let allTexts = document.querySelectorAll(".text");
+
+        container.innerHTML = "<h1>Новый заголовок</h1>";
+        firstText.textContent = "Новый текст";
+        firstText.setAttribute("class", "new-text");
+        firstText.style.color = "red";
+
+        let newElement = document.createElement("div");
+        newElement.textContent = "Новый элемент";
+        container.appendChild(newElement);
+
+        container.removeChild(texts[0]);
+    </script>
+</body>
+</html>
